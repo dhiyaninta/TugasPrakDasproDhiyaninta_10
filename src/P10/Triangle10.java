@@ -8,19 +8,16 @@ public class Triangle10 {
         System.out.print("Masukkan nilai n = ");
         int n = sc.nextInt();
 
-        int i =  0; 
-        while (i <= n) {
-            while (i <= n) {
-                int j = 0;
-                while (j < i) {
-                    System.out.print("*");
-                    j++;
+        int i = n; 
+        while (i > 0) {
+            int j = 0;
+            while (j < i) {
+            System.out.print("*");
+            j++;
             }
-            System.out.println();
-            i++;
+        System.out.println();
+        i--;
         }
         sc.close();
        }
     }
-    
-}
