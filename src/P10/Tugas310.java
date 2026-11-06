@@ -11,8 +11,8 @@ public class Tugas310 {
             jmlToko = Alderts.nextInt();
         } while (jmlToko < 1);
         int totalBarang = 0;
-        int maxBarang = -1;
-        int tokoTerbanyak = -1;
+        int maxBarang = 0;
+        int tokoTerbanyak = 0;
 
         for (int i = 1; i <= jmlToko; i++){
             int jmlPelanggan = -1;
@@ -26,23 +26,23 @@ public class Tugas310 {
 
             int totalBarangToko = 0;
             for (int j = 1; j <= jmlPelanggan; j++) {
-                int jmlBarang = -1;
+                int jmlBarang = 0;
                 do {
                     System.out.print("Barang yang dibeli pelanggan ke- " + j + ": " );
                     jmlBarang = Alderts.nextInt();
                     if (jmlBarang < 0){
-                        System.out.println("Jumla barang tak boleh negatif!");
+                        System.out.println("Jumlah barang tak boleh negatif!");
                         }
                 } while (jmlBarang < 0);
                 totalBarangToko += jmlBarang;
             }
             totalBarang += totalBarangToko;
-            System.out.print("Toko " + i + " - pelanggan: " + jmlPelanggan + ", Total barang: " + " "+  totalBarang);
-
+            System.out.println("Toko " + i + " - pelanggan: " + jmlPelanggan + ", Total barang:  " + "  "+ totalBarang);
             if (totalBarangToko > maxBarang) {
                 maxBarang = totalBarangToko;
                 tokoTerbanyak = i;
             }
+            
             System.out.println("Total barang seluruh toko: " + totalBarangToko);
             }
             System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
@@ -50,5 +50,3 @@ public class Tugas310 {
         }
         
     }
-
-    
