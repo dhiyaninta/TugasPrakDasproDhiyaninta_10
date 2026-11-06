@@ -8,10 +8,9 @@ public class Triangle10 {
         System.out.print("Masukkan nilai n = ");
         int n = sc.nextInt();
 
-        int i =  1; 
+        int i =  0; 
         while (i <= n) {
             while (i <= n) {
-                System.out.println("[i= "+i +"] ");
                 int j = 0;
                 while (j < i) {
                     System.out.print("*");
