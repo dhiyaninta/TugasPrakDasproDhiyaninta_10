@@ -11,6 +11,7 @@ public class Triangle10 {
         int i =  1; 
         while (i <= n) {
             while (i <= n) {
+                System.out.println("[i= "+i +"] ");
                 int j = 0;
                 while (j < i) {
                     System.out.print("*");
