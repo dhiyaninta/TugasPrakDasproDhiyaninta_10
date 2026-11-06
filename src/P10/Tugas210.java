@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Tugas210 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner Alderts = new Scanner(System.in);
     
         System.out.print("Masukkan nilai n: ");
-        int n = input.nextInt();
+        int n = Alderts.nextInt();
         int total = 0;
         
         for (int i = 1; i <= n; i++) {
@@ -20,6 +20,6 @@ public class Tugas210 {
         }
         System.out.println("Jumlah seluruh angka: " + total);
 
-        input.close();
+        Alderts.close();
     }
 }
