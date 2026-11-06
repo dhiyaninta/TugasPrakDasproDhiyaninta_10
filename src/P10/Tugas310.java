@@ -12,7 +12,7 @@ public class Tugas310 {
         } while (jmlToko < 1);
         int totalBarang = 0;
         int maxBarang = -1;
-        int Terbanyak = -1;
+        int tokoTerbanyak = -1;
 
         for (int i = 1; i <= jmlToko; i++){
             int jmlPelanggan = -1;
@@ -41,10 +41,10 @@ public class Tugas310 {
 
             if (totalBarangToko > maxBarang) {
                 maxBarang = totalBarangToko;
-                Terbanyak = i;
+                tokoTerbanyak = i;
             }
             System.out.println("Total barang seluruh toko: " + totalBarangToko);
-            System.out.println("Toko dengan barang terbanyak: " + Terbanyak);
+            System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
             }
             Alderts.close();
         }
