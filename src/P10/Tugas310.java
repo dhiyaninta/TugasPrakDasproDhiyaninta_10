@@ -17,7 +17,7 @@ public class Tugas310 {
         for (int i = 1; i <= jmlToko; i++){
             int jmlPelanggan = -1;
             do{
-                System.out.print("Masukkan jumlah pelanggan " + i + ": ");
+                System.out.print("Masukkan jumlah pelanggan :  ");
                 jmlPelanggan = Alderts.nextInt();
                 if (jmlPelanggan < 0) {
                     System.out.println("Tidak valid, input ulang!");
@@ -44,10 +44,11 @@ public class Tugas310 {
                 tokoTerbanyak = i;
             }
             System.out.println("Total barang seluruh toko: " + totalBarangToko);
-            System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
             }
+            System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
             Alderts.close();
         }
+        
     }
 
     
