@@ -1,6 +1,7 @@
 package P10;
 import java.util.Scanner;
-
+/*jumlahKelompok = 2 + ( 10 mod 3) = 3
+jumlahPenilai= 3 + ( 10 mod 2) = 3 */
 public class NilaiKelompok10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -40,8 +41,9 @@ public class NilaiKelompok10 {
                     }
                 nomorKelompok++;
         }
-            System.out.println("Kelompok terbaik : " + kelompokTerbaik);
-            System.out.println("Rata-rata tertinggi : " + rataTertinggi);
+            System.out.println("================================");
+            System.out.println("Kelompok terbaik    : " + kelompokTerbaik);
+            System.out.println("Rata-rata tertinggi P: " + rataTertinggi);
         sc.close();
 
     }
