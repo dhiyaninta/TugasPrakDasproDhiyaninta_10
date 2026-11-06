@@ -1,0 +1,13 @@
+Ini adalah repository pertama saya
+Nama: Dhiyaninta Astiningtyas
+NIM: 264107020172
+Kelas: TI-1E
+
+Hasil Uji Studi Kasus 2 oleh Nabila Windi Febrian
+| No |  Jenis  | Dokumen |       Juara/ Dana       |                                  Output                                  | Sesuai?|
+|----|---------|---------|-------------------------|--------------------------------------------------------------------------|--------|
+| 1. | BAKORMA |    3    |   Juara 1               |Dokumen kurang lengkap(kurang1dokumen). Dana penghargaan tidak diberikan  | sesuai |
+| 2. | MANDIRI |    4    |   Juara 0               |Tidak mendapat dana penghargaan(hanya untuk juara 1/2/3)                  | sesuai |
+| 3. |  pkm    |    4    |   1 (lolos)             |Berhak memperoleh dana penghargaan(PKM lolos pendanaan).                  | sesuai |
+| 4. | Lainnya |    4    |  (tidak dipertanyakan)  |Tidak memperoleh dana penghargaan(jenis kegiatan tidak termasuk ketentuan)| sesuai |
+| 5. |  PKM    |    4    |   1 (lolos)             |Berhak memperoleh dana penghargaan(PKM lolos pendanaan).                  | sesuai |
