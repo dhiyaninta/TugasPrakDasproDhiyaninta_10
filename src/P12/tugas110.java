@@ -8,7 +8,7 @@ Tugas 1 (uji wajib) salah satu nilai yang diinput 10 mod 100 = 10*/
 public class tugas110 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int total = 0, lulus = 0;
+        int total = 0, lulus = 0, tdkLulus = 0;
         double rata;
 
         int jmlhMhs = 0;
@@ -29,16 +29,22 @@ public class tugas110 {
                 if (nilai[i] > tertinggi) tertinggi = nilai[i];
                 if (nilai[i] < terendah) terendah = nilai[i];
             }
-            if (nilai[i] > 70 ) {
+        }
+        for (int newNilai : nilai) {
+            if (newNilai > 70) {
+                String status = "LULUS";
+                System.out.println("Nilai lulus: " + newNilai + " (" + status + ")");
                 lulus++;
-                
+            } else {
+                System.out.println("nilai tidak lulus: " + newNilai + " (TIDAK LULUS)");
+                tdkLulus++;
             }
         }
         rata = total/jmlhMhs;
         System.out.println("Nilai rata-rata mahasiswa: " + rata);
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
-        System.out.println("Jumlah mahasiswa yang lulus: " + lulus);
+        
     }
     
     
