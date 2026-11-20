@@ -19,7 +19,6 @@ public class SearchNilai10 {
         for (int i = 0; i < nilai.length; i++) {
             System.out.print("Nilai elemen ke- " + i + ": ");
             nilai[i] = input.nextInt();
-
         }
         System.out.print("Masukkan nilai key: ");
         int key = input.nextInt();
@@ -32,9 +31,7 @@ public class SearchNilai10 {
                 System.out.println("Nilai " + key +" ditemukan pada indeks ke- " + i );
                 break;
             }
-        }
-
-            
+        }  
         if (!ditemukan) {
             System.out.println("Nilai " + key + " Tidak ditemukan.");
         }
