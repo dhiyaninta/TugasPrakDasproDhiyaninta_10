@@ -66,6 +66,8 @@ public class tugas210 {
     }
     System.out.println("Total bayar: Rp" + total);
 
+    System.out.println("======== TERIMAKASIH ========");
+
     input.close();
     }
 }
