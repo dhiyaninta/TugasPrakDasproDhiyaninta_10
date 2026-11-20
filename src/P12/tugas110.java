@@ -10,8 +10,8 @@ public class tugas110 {
         Scanner input = new Scanner(System.in);
         int total = 0, lulus = 0, tdkLulus = 0;
         double rata;
-
         int jmlhMhs = 0;
+        
         System.out.print("Masukkan banyaknya mahasiswa:  ");
         jmlhMhs = input.nextInt();
 
@@ -22,7 +22,6 @@ public class tugas110 {
             total += nilai[i];
         }
         int tertinggi = nilai[0];
-
         int terendah = nilai[0];
         for (int i = 0; i < nilai.length; i++) {
             if (i > 0) {
@@ -43,9 +42,6 @@ public class tugas110 {
         rata = total/jmlhMhs;
         System.out.println("Nilai rata-rata mahasiswa: " + rata);
         System.out.println("Nilai tertinggi: " + tertinggi);
-        System.out.println("Nilai terendah: " + terendah);
-        
+        System.out.println("Nilai terendah: " + terendah);   
     }
-    
-    
 }
