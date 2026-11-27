@@ -19,19 +19,28 @@ public class BioskopWithScanner10 {
             sc.nextLine();
 
             if (menu == 1) {
-                System.out.print("Masukkan nama: ");
-                nama = sc.nextLine();
-                System.out.print("Masukkan baris: ");
-                baris = sc.nextInt();
-                System.out.print("Masukkan kolom: ");
-                kolom = sc.nextInt();
-                sc.nextLine();
+                while(true){
+                    System.out.print("Masukkan nama: ");
+                    nama = sc.nextLine();
+                
+                    while(true){
+                        System.out.print("Masukkan baris: ");
+                        baris = sc.nextInt();
+                        System.out.print("Masukkan kolom: ");
+                        kolom = sc.nextInt();
+                        sc.nextLine();
 
-                if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
-                    System.out.println("Baris atau kolom tidak tersedia");
-                } else {
-                    penonton[baris - 1][kolom - 1] = nama;
-                }
+                        if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
+                            System.out.println("Baris atau kolom tidak tersedia");
+                            continue;
+                        }else if(penonton[baris-1][kolom -1] !=null ){
+                            System.out.println("Sudah terisi, input baris dan kolom ulang");
+                            continue;
+                        } else {
+                            penonton[baris - 1][kolom - 1] = nama;
+                            break;
+                        }
+                    }
 
                 System.out.print("Input penonton lainnya? (y/n): ");
                 pilihan = sc.nextLine();
@@ -39,16 +48,18 @@ public class BioskopWithScanner10 {
                 if (pilihan.equalsIgnoreCase("n")) {
                     break;
                 }
+            }
+            
             } else if (menu == 2) {
                 System.out.println("Daftar Penonton: ");
                 for (int i = 0; i < penonton.length; i++) {
                     for (int j = 0; j < penonton[i].length; j++) {
-                     System.out.println("Penonton baris ke-" + (i + 1) + ": " + penonton[i][j]);   
+                        System.out.println("Penonton baris ke-" + (i + 1) + ": " + penonton[i][j]);   
                     }
                 }
             } else if (menu == 3) {
-                break;
-            } else {
+                    break;
+            } else if(menu > 3) {
                 System.out.println("Input tidak valid");
             }
         }
