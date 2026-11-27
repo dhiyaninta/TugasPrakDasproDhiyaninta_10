@@ -32,10 +32,8 @@ public class BioskopWithScanner10 {
 
                         if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
                             System.out.println("Baris atau kolom tidak tersedia");
-                            continue;
                         }else if(penonton[baris-1][kolom -1] !=null ){
-                            System.out.println("Sudah terisi, input baris dan kolom ulang");
-                            continue;
+                            System.out.println("Sudah terisi, input baris dan kolom ulang");   
                         } else {
                             penonton[baris - 1][kolom - 1] = nama;
                             break;
@@ -54,7 +52,11 @@ public class BioskopWithScanner10 {
                 System.out.println("Daftar Penonton: ");
                 for (int i = 0; i < penonton.length; i++) {
                     for (int j = 0; j < penonton[i].length; j++) {
-                        System.out.println("Penonton baris ke-" + (i + 1) + ": " + penonton[i][j]);   
+                        if(penonton[i][j] == null ){
+                            System.out.println("Penonton baris ke- "+ (i + 1) + ": ***" );
+                        } else{
+                        System.out.println("Penonton baris ke-" + (i + 1) + ": " + penonton[i][j]);
+                        }
                     }
                 }
             } else if (menu == 3) {
